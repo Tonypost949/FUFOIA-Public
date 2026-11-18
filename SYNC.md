@@ -1,23 +1,39 @@
 # How the two FU FOIA repos stay in sync
 
-Two repos, one system, one-directional flow:
+Two repos, one system. The core is shared **both ways**; what each edition
+*is* never crosses over.
 
-- **FUFOIA-Public** — where the shared core is developed (Neo + the owner).
-- **FUFOIA-Anonymous** — the OsintNeoAi workspace edition, maintained **only by agy + IntelliJ IDEA** (owner rule, same as the website).
+- **FUFOIA-Public** — the signed edition (Neo + the owner work here).
+- **FUFOIA-Anonymous** — the OsintNeoAi workspace edition, maintained
+  **only by agy + IntelliJ IDEA** (owner rule, same as the website).
 
-## The mechanism
+## What syncs: core mechanics, in either direction
 
-1. The core is a single file: `core/outreach_engine.py`. Its version is in
-   `CORE_VERSION` in both repos (currently `fufoia-core 1.0.0` in both).
-2. When the core changes in FUFOIA-Public, `CORE_VERSION` bumps there and
-   the change is committed with the version in the message.
-3. FUFOIA-Anonymous updates **only when agy/IntelliJ deliberately pull** the
-   new core file over and bump their `CORE_VERSION` to match. Nothing is
-   pushed into the Anonymous repo by the Personal side, automatically or
-   otherwise.
-4. Settings and cases **never** sync. They are the editions' whole point of
-   separation: Public settings carry the sender's own identity; Anonymous
-   settings carry the unit identity; neither repo's cases move.
+The core is a single file: `core/outreach_engine.py`. Its version is in
+`CORE_VERSION` in both repos (currently `fufoia-core 1.0.0` in both).
+
+A core mechanic is the machinery both editions need: the escalation ladder,
+the verbatim lock, the reply parser, the channel adapters, the approval gate.
+If a better mechanic is built on **either** side — say IntelliJ improves the
+ladder on the Anonymous side — the other side takes it too:
+
+1. Whoever improves the core bumps `CORE_VERSION` in their repo and commits
+   with the version in the message.
+2. The other side pulls the new core file over and bumps their
+   `CORE_VERSION` to match — deliberately, by that repo's own maintainers
+   (agy/IntelliJ for Anonymous; Neo/the owner for Public). Never automatic,
+   and nobody pushes into the other repo.
+
+## What NEVER syncs: what each edition is
+
+- **Identity and settings.** Public signs as a named person; Anonymous signs
+  as the unit. Settings files never move between repos.
+- **Cases.** Each edition's cases are its own.
+- **Edition-only behavior.** If a behavior belongs to one edition only, it
+  lives in that edition's **settings** as data — never as a special case in
+  the core. That is the separation mechanism: because everything
+  edition-specific is settings, pulling the core across can improve the
+  machinery without ever dragging the other edition's purpose with it.
 
 ## Why not automatic sync
 
@@ -25,3 +41,7 @@ The owner's rule is that the website side is touched only by agy + IntelliJ.
 An automatic mirror would be another agent's write into their territory.
 The version file is the communication: each repo can always see which core
 the other is running, and the pull is a deliberate act by the maintainers.
+
+*(This page lives in FUFOIA-Public, where core work is coordinated. The
+Anonymous repo carries its own copy; its maintainers adopt updates to this
+page when they pull a core version, per the same rule.)*

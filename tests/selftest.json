@@ -1,0 +1,57 @@
+{
+  "armed": false,
+  "case_id": "SELFTEST-001",
+  "created": "2026-11-18",
+  "directions_first": {
+    "directed_route": "Self-test only — recipient is the user's own amd949609@gmail.com, used to prove the draft pipeline end to end without aiming at any target.",
+    "status": "TEST_ONLY",
+    "target_published_directions": "N/A — pipeline test"
+  },
+  "status": "PIPELINE_TEST_NOT_A_REAL_CASE",
+  "subject_line": "Pipeline self-test (not a real case)",
+  "target": {
+    "chain": [
+      {
+        "chain_level": 1,
+        "contact_method": "email",
+        "email": "amd949609@gmail.com",
+        "fax": null,
+        "mail_address": null,
+        "role": "Self-test recipient (user's own mailbox)",
+        "verification": "VERIFIED"
+      },
+      {
+        "chain_level": 2,
+        "contact_method": "email",
+        "email": "amd949609@gmail.com",
+        "fax": null,
+        "mail_address": null,
+        "role": "Self-test CC (user's own mailbox)",
+        "verification": "VERIFIED"
+      },
+      {
+        "chain_level": 3,
+        "contact_method": "mail",
+        "email": "amd949609@gmail.com",
+        "fax": null,
+        "mail_address": {
+          "address_city": "Mountain View",
+          "address_country": "US",
+          "address_line1": "1600 Amphitheatre Parkway",
+          "address_state": "CA",
+          "address_zip": "94043",
+          "name": "Google LLC — Legal Department"
+        },
+        "role": "Self-test legal copy (user's own mailbox)",
+        "verification": "VERIFIED"
+      }
+    ],
+    "organization": "SELF-TEST"
+  },
+  "verbatim": {
+    "reason_for_contact": "TEST REASON: this is a pipeline test of the FU FOIA Public edition engine, not a real request.",
+    "requested_action": "TEST ASK: confirm the draft contains this text byte-for-byte, the amd949609 signature, and the Google Voice number (949) 424-5769."
+  },
+  "verbatim_status": "Test wording written by Neo for pipeline verification only.",
+  "verbatim_sha256": "ee73c4ccc985914dfcbbcbca670be7c299988900edad08c552b43de69fccbb5a"
+}

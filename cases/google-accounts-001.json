@@ -1,0 +1,66 @@
+{
+  "armed": false,
+  "case_id": "GOOGLE-ACCOUNTS-001",
+  "created": "2026-11-18",
+  "directions_first": {
+    "directed_route": "Google Account Help / account recovery flow (support.google.com/accounts) — the route Google's own help pages direct account-access cases to. Google publishes no direct support email for free consumer accounts; that is why chain email recipients below are TO_VERIFY until a directed address comes back from the form / a reply.",
+    "status": "LOGGED_NOT_YET_RUN_FOR_THIS_CASE",
+    "target_published_directions": "Follow Google's published account-recovery directions first, exactly as written, and log each step before escalating."
+  },
+  "status": "ON_HOLD_AWAITING_USER_WORDING",
+  "subject_line": "Account access — anthonymichaeldimarcello@gmail.com and disoledesign@gmail.com (sent from amd949609@gmail.com)",
+  "target": {
+    "chain": [
+      {
+        "chain_level": 1,
+        "contact_method": "Google's directed account-help / recovery route first; email only to an address Google itself directs or replies from",
+        "email": null,
+        "fax": null,
+        "mail_address": null,
+        "role": "Google Account Support — directed contact (records / account help front door)",
+        "verification": "TO_VERIFY"
+      },
+      {
+        "chain_level": 2,
+        "contact_method": "Escalation office reached via the level-1 reply chain or Google's published support escalation — never an invented address",
+        "email": null,
+        "fax": null,
+        "mail_address": null,
+        "role": "Google Support Escalation / Director's office (CC at Level 3+)",
+        "verification": "TO_VERIFY"
+      },
+      {
+        "chain_level": 3,
+        "contact_method": "Certified mail (Lob, when the user wires it) or hand-mailed printed letter",
+        "email": null,
+        "fax": null,
+        "mail_address": {
+          "address_city": "Mountain View",
+          "address_country": "US",
+          "address_line1": "1600 Amphitheatre Parkway",
+          "address_state": "CA",
+          "address_zip": "94043",
+          "name": "Google LLC — Legal Department"
+        },
+        "role": "Google LLC Legal Department (paper trail copy at Level 5+)",
+        "verification": "VERIFIED_MAIL_ADDRESS_PUBLIC"
+      }
+    ],
+    "organization": "Google LLC"
+  },
+  "verbatim": {
+    "reason_for_contact": "",
+    "requested_action": ""
+  },
+  "verbatim_status": "EMPTY — user correction 2026-11-18 11:12 PST: Neo draft wording WITHDRAWN. It wrongly treated amd949609 as needing a security/recovery fix; the user states amd949609 is fine and he wants nothing changed on it. The accounts he cannot get into are anthonymichaeldimarcello@gmail.com and disoledesign@gmail.com. User will provide his own exact wording; he has NOT told Neo to write anything yet. Case stays on hold, not armed, nothing aimed.",
+  "verbatim_sha256": "316deeb28892b1cdebfe5c12c2cd620b5b8f29289c1ffe3d4f5fc1b2e6a4ea7d",
+  "from_account_note": "amd949609@gmail.com is FINE — user correction 2026-11-18 11:12 PST: nothing is wrong with it, he does NOT want anything changed on it, it logs in with its password. It is only the sending account and the backup recovery email for the accounts at issue.",
+  "accounts_at_issue": [
+    "anthonymichaeldimarcello@gmail.com",
+    "disoledesign@gmail.com"
+  ],
+  "superseded_draft_wording": {
+    "reason_for_contact": "I am Anthony Michael DiMarcello III. My main Google account is amd949609@gmail.com. That address is my main email and the backup recovery email for everything I do, including disoledesign@gmail.com, which I am locked out of after its password was changed. My amd949609 account's own recovery request was denied by Google on November 16, 2026 even though I can still sign in, its password change is blocked because the only options Google offers are text codes to old phone numbers, and a third party used an SMTP credential for this account to send spam in October and November 2026. I cannot get into my accounts and I need a human at Google to fix the account security state and the sign-in mess.",
+    "requested_action": "Restore my access to disoledesign@gmail.com, fix the security and recovery state of amd949609@gmail.com so I can change its password and secure it with a method I can actually use, and assign a named human and a case or reference number to this matter. Reply to amd949609@gmail.com or call my Google Voice number, (949) 424-5769."
+  }
+}

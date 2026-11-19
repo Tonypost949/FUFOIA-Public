@@ -1,0 +1,68 @@
+{
+  "armed": false,
+  "case_id": "APPLE-ACCOUNT-001",
+  "created": "2026-11-18",
+  "directions_first": {
+    "directed_route": "Apple's own published account route: iforgot.apple.com / Apple Support (support.apple.com) — the route Apple directs locked-account cases to. Apple publishes no direct support email for consumer account cases; chain email recipients are TO_VERIFY until a directed address comes back from the flow / a reply.",
+    "status": "LOGGED_NOT_YET_RUN_FOR_THIS_CASE",
+    "target_published_directions": "Follow Apple's published locked-account recovery directions first, exactly as written, and log each step before escalating. NOTE: a recovery attempt for this account is already parked at the card step (documented in side chat 71412f27) — Level 0 resumes from there, it does not restart blind."
+  },
+  "status": "ON_HOLD_AWAITING_USER_WORDING",
+  "subject_line": "Account access — Apple Account amd949609@gmail.com locked (sent from amd949609@gmail.com)",
+  "target": {
+    "chain": [
+      {
+        "chain_level": 1,
+        "contact_method": "Apple's directed account-help / recovery route first; email only to an address Apple itself directs or replies from",
+        "email": null,
+        "fax": null,
+        "mail_address": null,
+        "role": "Apple Support — directed contact (account help front door)",
+        "verification": "TO_VERIFY"
+      },
+      {
+        "chain_level": 2,
+        "contact_method": "Escalation reached via the level-1 reply chain or Apple's published support escalation — never an invented address",
+        "email": null,
+        "fax": null,
+        "mail_address": null,
+        "role": "Apple Support Escalation (CC at Level 3+)",
+        "verification": "TO_VERIFY"
+      },
+      {
+        "chain_level": 3,
+        "contact_method": "Certified mail (Lob, when the user wires it) or hand-mailed printed letter",
+        "email": null,
+        "fax": null,
+        "mail_address": {
+          "address_city": "Cupertino",
+          "address_country": "US",
+          "address_line1": "One Apple Park Way",
+          "address_state": "CA",
+          "address_zip": "95014",
+          "name": "Apple Inc."
+        },
+        "role": "Apple Inc. (paper trail copy at Level 5+)",
+        "verification": "TO_VERIFY — published corporate HQ address, to be confirmed against an Apple-published source before any mailing"
+      }
+    ],
+    "organization": "Apple Inc."
+  },
+  "verbatim": {
+    "reason_for_contact": "",
+    "requested_action": ""
+  },
+  "verbatim_status": "EMPTY — filed 2026-11-18 on the user's order (via side chat 71412f27) that all open account-access items go into FU FOIA. Verbatim wording not yet given; candidate wording on file is NOT locked. Case stays on hold, not armed, nothing aimed.",
+  "verbatim_sha256": "316deeb28892b1cdebfe5c12c2cd620b5b8f29289c1ffe3d4f5fc1b2e6a4ea7d",
+  "candidate_wording": {
+    "text": "turn it back on",
+    "full_user_line": "Tell them to turn it back on and keep hitting them up until they do.",
+    "source": "User order relayed from side chat 71412f27 (Authorize Google Tasks access), 2026-11-18 18:24 PST",
+    "status": "CANDIDATE ONLY — NOT locked as verbatim. Clarification asked in chat 71412f27 and still open: does 'it' mean every account in this set or one specific account? Exact per-account wording must be the user's before anything is armed. Nothing sends."
+  },
+  "situation": "The Apple Account for amd949609@gmail.com is locked for security reasons (documented open item APPLE_ACCOUNT_LOCKED, memory logs 2026-11-15 through 2026-11-17). A recovery attempt is parked at the card step. NOTE: this case's target is APPLE, not Google — the Gmail account amd949609@gmail.com itself is fine (user correction 2026-11-18); it is only the Apple Account under that email that is locked.",
+  "accounts_at_issue": [
+    "Apple Account: amd949609@gmail.com"
+  ],
+  "filing_batch": "ACCOUNT-ACCESS-SET filed 2026-11-18 18:24 PST on user order via side chat 71412f27: 'that would go right into the FU FOIA. All that shit.' amd949609@gmail.com itself is FINE (user correction 2026-11-18) and is never a target of these cases — it is the sending/recovery account."
+}
